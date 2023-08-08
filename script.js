@@ -43,9 +43,7 @@ var counts1 = setInterval(updated1,1);
        
         filterContainer.addEventListener("click", (event) =>{
           if(event.target.classList.contains("filter-item")){
-             // deactivate existing active 'filter-item'
              filterContainer.querySelector(".active").classList.remove("active");
-             // activate new 'filter-item'
              event.target.classList.add("active");
              const filterValue = event.target.getAttribute("data-filter");
              galleryItems.forEach((item) =>{
